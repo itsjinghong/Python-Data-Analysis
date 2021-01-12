@@ -111,8 +111,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif'] = 'SimHei' ## 设置中文显示
 plt.rcParams['axes.unicode_minus'] = False
-data = np.load('D:/软件（学习）/Python/数据分析与挖掘/chapter3/data/国民经济核算季度数据.npz')
-data = np.load('./data/国民经济核算季度数据.npz')
+data = np.load('./data/国民经济核算季度数据.npz',allow_pickle=True)
 
 name = data['columns'] ## 提取其中的columns数组，视为数据的标签
 values = data['values']## 提取其中的values数组，数据的存在位置\
