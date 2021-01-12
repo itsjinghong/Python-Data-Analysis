@@ -52,6 +52,7 @@ plt.show()
 x = np.linspace(0, 4*np.pi)## 生成x轴数据
 y = np.sin(x)## 生成y轴数据
 plt.plot(x,y,label="$sin(x)$")## 绘制sin曲线图
+plt.legend()
 plt.title('sin')
 plt.savefig('./tmp/默认sin曲线.png')
 plt.show()
@@ -61,6 +62,7 @@ plt.rcParams['lines.linestyle'] = '-.'#-，-.，--，：四种
 plt.rcParams['lines.linewidth'] = 3
 plt.rcParams['lines.marker']='D' #线的形状
 plt.plot(x,y,label="$sin(x)$")## 绘制三角函数
+plt.legend()
 plt.title('sin')
 plt.savefig('./tmp/修改rc参数后sin曲线.png')
 plt.show()
