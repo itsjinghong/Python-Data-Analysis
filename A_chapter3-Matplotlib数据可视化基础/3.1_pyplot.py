@@ -61,6 +61,7 @@ plt.show()
 plt.rcParams['lines.linestyle'] = '-.'#-，-.，--，：四种
 plt.rcParams['lines.linewidth'] = 3
 plt.rcParams['lines.marker']='D' #线的形状
+# for more makers, see https://matplotlib.org/3.1.0/api/markers_api.html#module-matplotlib.markers
 plt.plot(x,y,label="$sin(x)$")## 绘制三角函数
 plt.legend()
 plt.title('sin')
